@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using chh_api_push_notification.Models;
 using chh_api_push_notification.Service;
 using Microsoft.AspNetCore.Mvc;
