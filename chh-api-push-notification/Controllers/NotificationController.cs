@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace net_core_api_push_notification_demo.Controllers
 {
-    [Route("api/notification")]
+    [Route("api/[controller]")]
     [ApiController]
     public class NotificationController : ControllerBase
     {
@@ -15,7 +15,7 @@ namespace net_core_api_push_notification_demo.Controllers
             _notificationService = notificationService;
         }
 
-        [Route("send")]
+        [Route("send-notification")]
         [HttpPost]
         public async Task<IActionResult> SendNotification(NotificationModel notificationModel)
         {
